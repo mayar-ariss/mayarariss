@@ -1,0 +1,526 @@
+
+body {
+    overflow-x: hidden;
+}
+
+
+.hideopening {
+   visibility:hidden;
+   display:none;
+}
+
+.openingvideo { 
+    width: 100%;
+    height: auto;
+    position: absolute;
+    z-index: 100;
+}
+
+#videointro {
+    z-index: 20;
+    position: sticky;
+}
+
+.fillBackground {
+    background-color: white;
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    z-index: 10;
+    height: 1000vh;
+}
+
+
+.readmore {
+    color: white;
+    font-family: Roboto;
+    position: absolute;
+    font-size: 9px;
+    padding: 5px;
+    bottom: 0;
+    right: 0;
+}
+
+.infotext {
+    width: 50%;
+    margin-top: 15px;
+    font-family: 'Roboto';
+    font-size: 12px;
+}
+
+.credits {
+    font-family: 'Roboto';
+    font-size: 12px;
+    margin-top: 15px;
+}
+
+
+
+#Quntio_back {
+    background: #c50074;
+}
+
+#Curitiba_back {
+    background: #177574;
+}
+
+#Laval_back {
+    background: #1e1f21;
+}
+
+#Rio_back {
+    background: #5f204f;
+}
+
+#Melbourne_back {
+    background: #00aff0;
+}
+
+#Thessaloniki_back {
+    background: #75c242;
+}
+
+#Bolzono_back {
+    background: #723115;
+}
+
+#Madrid_back {
+    background: #f1592a;
+}
+
+#Medellin_back {
+    background: #70c254;
+}
+
+#CapeTown_back {
+    background: #057ba1;
+}
+
+#Pune_Wood_Dallas_back {
+    background: #1d979c;
+}
+
+#Shenzhen_back {
+    background: #bf3646;
+}
+
+#Paris2_back {
+    background: #0e1e14;
+}
+
+#Paris_back {
+    background: #003846;
+}
+
+#Zhengzhou_back {
+    background: #1c1c1c;
+}
+
+#Munich_back {
+    background: #7e95cb;
+}
+
+#BenGuerir_back {
+    background: #7c51a1;
+}
+
+#Moscow2_back {
+    background: #4e8abe;
+}
+
+#Moscow_back {
+    background: #feba31;
+}
+
+#Copenhagen2_back {
+    background: #495494;
+}
+
+#Copenhagen_back {
+    background: #d44c36;
+}
+
+#Amsterdam2_back {
+    background: #3b699a;
+}
+
+#Amsterdam_back {
+    background: #6d488d;
+}
+
+#Rio2_back {
+    background: #6f723b;
+}
+
+
+
+
+
+
+
+
+* {
+    box-sizing: border-box;
+}
+
+h1 {
+    font-size: 2.2em;
+}
+
+
+.overlap_text {
+        position: relative;
+    }
+
+.L_hoover {
+    top: 0;
+    left: 0;
+}
+
+.cover_image {
+    opacity: 1;
+}
+
+    .cover_image:hover {
+        opacity: 0;
+    }
+
+
+
+.overlap_text {
+    visibility: visible;
+}
+
+
+
+.grid-container {
+    position:
+    margin-bottom: 200px;
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    -webkit-box-align: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.text_container {
+    padding:10px;
+}
+
+.grid-container_text {
+    font-family:  'Roboto Slab', serif;
+    font-size: 15px;
+    margin-bottom: 200px;
+    display: grid;
+    grid-template-columns: 55% 45%;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+}
+
+/* .map_div img {
+    margin-top: 0px;
+    left: 0;
+    position: absolute;
+    width: 100%;
+    height: auto;
+} */
+
+
+.v21_39 {
+  width: 100%;
+  height: 4264px;
+  background: rgba(255,255,255,1);
+  opacity: 1;
+  position: relative;
+  top: 0px;
+  left: 0px;
+  overflow: hidden;
+}
+.v21_40 {
+  width: 100%;
+  height: 778px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  opacity: 1;
+  position: absolute;
+  top: 73px;
+  left: 0px;
+  overflow: hidden;
+}
+.logo_bottom {
+  height: 21px;
+  opacity: 1;
+display:inline-block;
+}
+
+a {
+    color: black !important;
+}
+
+a:hover {
+    text-decoration: none !important; 
+}
+
+.header {
+    height:50px;
+}
+
+.grid-container img {
+    width: 100%;
+    height: auto;
+}
+
+.city {
+    padding: 10px;
+    position: relative;
+}
+
+.map {
+    margin-bottom: 75px;
+}
+
+.map_div {
+    width: 100%;
+    background: rgba(255,255,255,1);
+    opacity: 1;
+    position: relative;
+    top: 0px;
+    left: 0px;
+    overflow: hidden;
+}
+.row {
+    display: flex;
+    align-items: center;
+}
+
+.row1 {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 40px !important;
+    margin-right: 40px !important;
+    margin-bottom: 40px !important;
+}
+
+.logo {
+    height: 20px;
+    opacity: 1;
+    display: inline-block;  
+}
+
+.headers {
+    margin-left: 40px !important;
+    margin-top: 15px !important;
+}
+.Main_title {
+    width: 300px;
+    color: rgba(0,0,0,1);
+    display: inline-block;
+    margin-left: 30px;  
+    top: 20px;
+    font-family: Roboto Mono;
+    font-weight: Bold;
+    font-size: 20px;
+    opacity: 1;
+    text-align: left;
+}
+.intro_text {
+    color: rgba(0,0,0,1);
+    position: relative;
+    font-family: Roboto;
+    font-size: 18px;
+    height: 450px;
+    width: 100%;
+    opacity: 1;
+    text-align: left;
+}
+
+.Covers_sec {
+    position:relative;
+}
+
+.Year {
+    font-size: 10px;
+    font-family: Roboto;
+}
+
+.CityName {
+    font-size: 10px;
+    letter-spacing: -0.5px;
+    font-family: Roboto Mono;
+    font-weight: Bold;
+}   
+
+.description {
+    margin-top: 10px !important;
+    margin-bottom: 40px;
+    width: 100%;
+    margin-right: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.Title_sec {
+    padding-left: 10px;
+    color: rgba(0,0,0,1);
+    font-family: Roboto Mono;
+    font-weight: Bold;
+    font-size: 18px;
+    opacity: 1;
+    text-align: left;
+}
+.body-text-bold {
+    padding-left: 10px;
+    color: rgba(0,0,0,1);
+    font-family: Roboto Mono;
+    font-weight: Bold;
+    font-size: 14px;
+    opacity: 1;
+    text-align: left;
+}
+/* .v21_45 {
+    color: rgba(0,0,0,1);
+    margin-right: 100px;
+    font-family: Roboto;
+    font-size: 12px;
+    opacity: 1;
+    text-align: right;
+} */
+.Accessibility {
+    color: rgba(0,0,0,1);
+display:inline-block;
+    font-family: Roboto;
+    font-weight: Bold;
+    font-size: 14px;
+    opacity: 1;
+    text-align: right;
+}
+.v21_47 {
+  width: 257px;
+  color: rgba(0,0,0,1);
+  position: absolute;
+  font-family: Roboto;
+  font-size: 18px;
+  opacity: 1;
+  text-align: left;
+}
+.v21_48 {
+  width: 178px;
+  color: rgba(0,0,0,1);
+  position: absolute;
+  top: 3595px;
+  left: 982px;
+  font-family: Roboto;
+  font-size: 18px;
+  opacity: 1;
+  text-align: left;
+}
+.name {
+  color: #fff;
+}
+.name {
+  color: #fff;
+}
+.name {
+  color: #fff;
+}
+.v21_51 {
+  width: 66px;
+  height: 43px;
+  background: rgba(255,255,255,1);
+  opacity: 1;
+  position: absolute;
+  top: 15px;
+  left: 26px;
+  overflow: hidden;
+}
+.name {
+  color: #fff;
+}
+
+
+
+
+@media screen and (max-width: 1200px) {
+    .citytext_Laval {
+        font-size: 14px;
+    }
+}
+
+
+@media screen and (max-width: 1060px) {
+    .citytext_Laval {
+        font-size: 14px;
+    }
+}
+
+
+
+
+
+
+@media screen and (max-width: 1000px) {
+    .grid-container {
+        grid-template-columns: 33.3% 33.3% 33.3%;
+    }
+
+    .citytext_Laval {
+        font-size: 14px;
+        display: block; float: left;
+    }
+}
+
+@media screen and (max-width: 750px) {
+
+    .grid-container {
+        grid-template-columns: 50% 50%;
+    }
+
+    .grid-container_text {
+        grid-template-columns: 100%;
+    }
+
+    .citytext_Laval {
+        font-size: 14px;
+        display: block; float: left;
+    }
+
+
+    .Main_title {
+        font-size: 20px;
+    }
+
+    .logo {
+        height:20px;
+    }
+
+    .logo_bottom {
+        height: 15px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+
+    .grid-container {
+        grid-template-columns: 100% ;
+    }
+
+.citytext_Laval {
+    font-size: 14px;
+    display: block; float: left;
+}
+
+.logo {
+    height:20px;
+}
+
+.logo_bottom {
+    height: 15px;
+}
+
+}
+

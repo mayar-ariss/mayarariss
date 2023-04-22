@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Mail Drones</title>
+  <meta charset="utf-8">
+  <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta property="og:title" content="Mail Drones">
+  <meta property="og:description" content="Hyperlocal Last-mile Distribution Networks">
+  <meta property="og:image" content="https://mayarariss.com/dist/pixelprof.png">
+  <meta property="og:url" content="https://mayarariss.com/mail_drones/">
+  <!-- Bootstrap -->
+  <link href="mail_drones/css/bootstrap.css" rel="stylesheet">
+
+
+
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+          <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+          <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]
+    http://www.artandstructure.com/softwaredev/CSSimggallery.php-->
+
+  <!--lightbox css-->
+  <!-- <link rel="stylesheet" href="mail_drones/css/bootstrap-image-gallery.min.css"> -->
+  <!-- <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"> -->
+  <!-- <link rel="stylesheet" href="https://blueimp.github.io/Gallery/css/blueimp-gallery.min.css"> -->
+
+  <!--custom css-->
+  <link href="mail_drones/css/style.css" rel="stylesheet" type="text/css">
+  <link rel="shortcut icon" type="image/x-icon" href="dist/pixelprof.png" />
+
+
+
+</head>
+
+<body>
+
+<!-- Header -->
+
+  <div class="container">
+    <div class="row" style="margin:40px">
+        <div class="logo col-auto">
+            <a href="https://imperial.ac.uk" target="_blank">
+                <a href="https://transport-systems.imperial.ac.uk" class="home_btn"><img
+                        src="mail_drones/images/tsl_logo.png" width="80" /></a>
+            </a>
+        </div>
+        <hr />
+    </div>
+</div>
+  
+  <div class="content-section">
+
+    <div class="container trigger">
+      <div class="row">
+        <div class="col-md-10 offset-md-1">
+
+          <h1 class="intro top1">Mail Drones<br></h1>
+          <div class="hz"></div>
+          <div class="subtitle">Hyperlocal Last-mile Distribution Networks </h5>
+          </div>
+        </div>
+
+      </div>
+
+
+      <div class="row" style="margin:40px">
+        <div class="col-md-10 offset-md-1">
+
+        <h3 class="chaptertitle top2">Overview</h3>
+      </div>
+
+        <div class="col-md-5 offset-md-1">
+          <p class="body-text-bold">
+            The global increase in urban population directly affects the efficiency of existing
+            transportation
+            systems. With technological progress, alternatives to traditional transportation methods are explored. A drone mail delivery system is here proposed to reduce delays in transportation
+            networks.
+          </p>
+
+          <p class="english">
+            This project aims to optimise a network of hyperlocal last-mile distribution depots in
+            London, in the districts of Camden, City of London, Westminster, Kensington and
+            Chelsea. The drones dispatch mail directly to customers, aiming at delivery times of 7 minutes or
+            less from their original departure warehouse. A facility selection strategy is also outlined, which allows
+            further expansion to take place.
+          </p>
+
+        </div><!-- /col -->
+
+        <div class="col-md-5">
+
+          <p class="english">
+            Global urbanization has led to one of the world’s most pressing environmental health concerns: the
+            increasing number of people contributing to and being affected by air pollution, leading to 7
+            million early deaths each year. The key issue is human exposure to pollution within cities and the
+            consequential effects on human health.
+            <br /><br />
+            Mail Drones is particularly relevant in the present context of global warming, and would also
+            contribute to increase the air quality in cities and mitigate human exposure to dangerous air
+            pollution.
+
+          </p><!-- /col -->
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <!-- </section> -->
+
+  <div class="col-md-10 offset-md-1 photocontainer">
+
+    <div id="cf4a" class="photo imageAlign ">
+      <img class="img-responsive class" src="mail_drones/images/potential_locations10.svg" />
+      <img class="img-responsive class" src="mail_drones/images/potential_locations8.svg" />
+      <img class="img-responsive class" src="mail_drones/images/potential_locations6.svg" />
+      <img class="img-responsive class" src="mail_drones/images/potential_locations4.svg" />
+      <img class="img-responsive class" src="mail_drones/images/potential_locations2.svg" />
+      <img class="img-responsive class" src="mail_drones/images/potential_locations.svg" />
+    </div>
+  </div>
+  </div>
+
+  <div class="container">
+
+
+    <div class="row" style="margin:40px">
+      
+      <div class="col-md-10 offset-md-1">
+        <h3 class="chaptertitle top2">Description</h3>
+      </div>
+      <div class="col-md-5 offset-md-1">
+        <p class="english">
+          The main objective is to address the outlined urban issues, while ensuring that the facility expansion
+          strategy maximises profit. The mathematical model takes as inputs the expected number of deliveries per
+          month in a given neighbourhood, which depends on its total population and the time since the beginning of
+          regional operations.
+        </p>
+
+        <p class="english">
+          Economic constraints are set considering the total initial budget, depot rent, operating costs, and
+          average revenue of which a certain percentage is set aside for further expansion. New warehouses are
+          established every two months, providing enough funds are available to cover their cost of operation.
+        </p>
+
+      </div><!-- /col -->
+
+      <div class="col-md-5">
+
+        <p class="english">
+          In this case study, the data is publicly available at <a href="https://data.london.gov.uk/dataset/lsoa-atlas"
+            target="_blank"><span class="title">Greater London
+              Authority</span></a>. With Python, the geospatial data is generated using GeoPandas. Then, the locations
+          of the optimal combination of depots is determined using PulP.
+          <br /><br />
+          Economic constraints are set considering the total initial budget, depot rent, operating costs, and
+          average revenue of which a certain percentage is set aside for further expansion. New warehouses are
+          established every two months, providing enough funds are available to cover their cost of operation.
+        </p><!-- /col -->
+      </div>
+
+    </div>
+  </div>
+</div>
+
+
+
+  <!-- Contact Section -->
+  <section class=" content-section ">
+    <div class="container">
+      <div class="row" style="margin:40px">
+        <div class="body-text-release">
+          <h2>Paper Release</h2>
+
+          <span class="Press-mid">The paper is available upon request. <br><br> Material on this web site can be used
+            freely <br>in any publication provided
+            that:
+          </span>
+
+          <ol>
+            <li><span class="Press-under">It is duly credited as a project by Mayar Ariss</span>
+            </li>
+            <li>A PDF copy of the publication is sent to <a href="mailto:eddy.ariss19@imperial.ac.uk"
+                target="_blank"><span class="title">eddy.ariss19@imperial.ac.uk</span></a></li>
+          </ol>
+        </div>
+
+
+      </div>
+    </div>
+  </section>
+
+  <section class=" content-section ">
+    <div class="container">
+      <div class="row" style="margin:40px">
+
+        <div class="body-text-publication">
+          <div class="col-sm-6 team-left">
+            <h2>Team</h2>
+            <div class="members" style="font-style: oblique;">Lead Researcher</div>
+            <a href="https://www.mayarariss.com/" target="_blank"><span class="title">Mayar Ariss</span></a><br><br>
+          </div>
+
+          <div class="col-sm-6 team-right">
+            <div class="members" style="font-style: oblique;">Scientific Supervisor</div>
+            <a href="https://www.imperial.ac.uk/people/p.angeloudis" target="_blank"><span class="title">Dr.
+                Panagiotis
+                Angeloudis</span></a><br><br>
+
+            <div class="members" style="font-style: oblique;">Web &amp; Visualization</div>
+            <a href="https://www.mayarariss.com/" target="_blank"><span class="title">Mayar Ariss</span></a><br><br>
+          </div>
+        </div>
+      </div><!-- /col -->
+    </div>
+  </section>
+
+  <section class=" content-section ">
+    <div class="container">
+      <div class="row" style="margin:40px">
+
+      <a href="https://www.imperial.ac.uk" target="_blank"><img src="mail_drones/images/ICL_logo.svg" width="170" /></a>
+      <br />
+      <br />
+    </div>
+  </div>
+
+  </section>
+
+
+
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <script src="mail_drones/js/jquery-1.11.2.min.js"></script>
+
+  <!-- Include all compiled plugins (below), or include individual files as needed -->
+  <script src="mail_drones/js/bootstrap.js"></script>
+
+  <script src="mail_drones/js/jquery.js"></script>
+
+  <!-- Bootstrap Core JavaScript -->
+  <script src="mail_drones/js/bootstrap.min.js"></script>
+
+  <!-- Scrolling Nav JavaScript -->
+  <script src="mail_drones/js/jquery.easing.min.js"></script>
+  <script src="mail_drones/js/scrolling-nav.js"></script>
+
+  <!-- fancyscrolling js -->
+  <script src="mail_drones/js/fancyscrollnav.js"></script>
+
+  <!--Blueimp Gallery-->
+  <script src="https://blueimp.github.io/Gallery/js/jquery.blueimp-gallery.min.js"></script>
+  <script src="mail_drones/js/bootstrap-image-gallery.min.js"></script>
+
+  <!--Retina <script type="text/javascript" src="dist/retina.min.js"></script>-->
+
+
+</body>
+
+
+
+</html>
