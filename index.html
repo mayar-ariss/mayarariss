@@ -390,7 +390,7 @@
 						target="_blank">Github</a></p>
 					<p><a href="https://www.linkedin.com/in/mayar-ariss/" rel="noopener noreferrer"
 							target="_blank">LinkedIn</a></p>
-					<p><a href="mailto:mayar313@mit.edu">Write</a></p>
+					<p><a href="mailto:ariss@mit.edu">Write</a></p>
 				</div>
 			</div>
 
@@ -406,7 +406,7 @@
 
 		<footer>
 			<span>
-				<h5>© 2024, All rights reserved</h5>
+				<h5>© 2025, All rights reserved</h5>
 			</span>
 			<span>
 				<h5>Typeface : <a href="https://github.com/raphaelbastide/Terminal-Grotesque" target="_blank">Terminal
@@ -436,13 +436,97 @@
 
 </body>
 
+<!-- Enhanced Google Analytics 4 tracking -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-8KQHDKK1R6"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
+  function gtag(){ dataLayer.push(arguments); }
   gtag('js', new Date());
 
-  gtag('config', 'G-8KQHDKK1R6');
+  // Base config with anonymized IP
+  gtag('config', 'G-8KQHDKK1R6', {
+    anonymize_ip: true,
+    send_page_view: true,
+    allow_ad_personalization_signals: false
+  });
+
+  // 1. Device Type Detection
+  function getDeviceType() {
+    const ua = navigator.userAgent;
+    if (/tablet|ipad|playbook|silk/i.test(ua)) return 'tablet';
+    if (/Mobile|Android|iPhone|iPod/i.test(ua)) return 'mobile';
+    return 'desktop';
+  }
+
+  const deviceType = getDeviceType();
+
+  // 2. Log visitor metadata
+  gtag('event', 'visitor_info', {
+    language: navigator.language || null,
+    user_agent: navigator.userAgent || null,
+    platform: navigator.platform || null,
+    device_type: deviceType
+  });
+
+  // 3. Scroll Depth Tracking
+  window.addEventListener('scroll', () => {
+    const scrollTop = window.scrollY;
+    const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+    const scrollPercent = Math.round((scrollTop / docHeight) * 100);
+
+    if (scrollPercent > 25 && !window.__scroll25) {
+      gtag('event', 'scroll_depth', { percent_scrolled: 25 });
+      window.__scroll25 = true;
+    }
+    if (scrollPercent > 50 && !window.__scroll50) {
+      gtag('event', 'scroll_depth', { percent_scrolled: 50 });
+      window.__scroll50 = true;
+    }
+    if (scrollPercent > 75 && !window.__scroll75) {
+      gtag('event', 'scroll_depth', { percent_scrolled: 75 });
+      window.__scroll75 = true;
+    }
+    if (scrollPercent > 90 && !window.__scroll90) {
+      gtag('event', 'scroll_depth', { percent_scrolled: 90 });
+      window.__scroll90 = true;
+    }
+  });
+
+  // 4. Dwell Time Tracking
+  setTimeout(() => { gtag('event', 'dwell_time', { seconds: 30 }); }, 30000);
+  setTimeout(() => { gtag('event', 'dwell_time', { seconds: 60 }); }, 60000);
+  setTimeout(() => { gtag('event', 'dwell_time', { seconds: 120 }); }, 120000);
+
+  // 5. External Link Click Tracking
+  document.querySelectorAll('a[target="_blank"]').forEach(link => {
+    link.addEventListener('click', function () {
+      gtag('event', 'external_link_click', {
+        event_category: 'engagement',
+        event_label: this.href
+      });
+    });
+  });
+
+  // 6. Log Client ID (user_pseudo_id)
+  gtag('get', 'G-8KQHDKK1R6', 'client_id', function(clientId) {
+    if (clientId) {
+      gtag('event', 'client_id_logged', { client_id: clientId });
+      console.log('Client ID:', clientId); // Remove in production if needed
+    }
+  });
+
+  // 7. (Optional) Load user demographic info from localStorage (if collected with consent)
+  const ageGroup = localStorage.getItem('user_age_group');
+  const gender = localStorage.getItem('user_gender');
+  if (ageGroup || gender) {
+    gtag('set', {
+      user_properties: {
+        age_group: ageGroup || undefined,
+        gender: gender || undefined
+      }
+    });
+  }
 </script>
+
 
 </html>
